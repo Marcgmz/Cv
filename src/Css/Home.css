@@ -1,0 +1,257 @@
+/* Body común */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
+  color: #212529;
+}
+
+/* Layout principal */
+.home-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenido principal */
+.home-main {
+  flex: 1;
+}
+
+/* Estilo del contenido del home */
+.home-content {
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Título principal */
+.home-content h1 {
+  font-size: 3.5rem;
+  color: #343a40; /* Título con color oscuro */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Subtítulo */
+.home-content p.lead {
+  font-size: 1.2rem;
+  color: #495057; /* Texto más suave */
+  margin-bottom: 2rem;
+}
+
+/* Botones */
+.home-content .btn-primary {
+  background-color: #0d6efd; /* Azul brillante para resaltar */
+  border-color: #0d6efd;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase; /* Mayúsculas para mayor impacto */
+}
+
+.home-content .btn-primary:hover {
+  background-color: #0a58ca;
+  border-color: #0a58ca;
+  transform: translateY(-3px);
+}
+
+.home-content .btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.home-content .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0a58ca;
+}
+
+/* Tarjetas de ventajas */
+.card {
+  border: none;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+  padding: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #495057;
+  font-size: 1rem;
+}
+
+/* Espaciado general entre tarjetas */
+.row {
+  margin-top: 3rem;
+}
+
+/* Enlaces */
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-decoration-none:hover {
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: #1e2225;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100vw;
+  margin-top: auto;
+  position: relative;
+  left: 0;
+}
+
+/* Animación para tarjetas */
+.hover-animate {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-animate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== Modo oscuro ==== */
+
+/* Ajuste de body en modo oscuro */
+.dark-mode {
+  background: linear-gradient(to bottom, #121212 0%, #1f1f1f 100%);
+  color: #f1f1f1;
+}
+
+/* Fondo y texto en contenido */
+.dark-mode .home-content {
+  color: #f1f1f1;
+}
+
+/* Título en modo oscuro */
+.dark-mode .home-content h1 {
+  color: #e6e6e6;
+}
+
+/* Subtítulo en modo oscuro */
+.dark-mode .home-content p.lead {
+  color: #bbbbbb;
+}
+
+/* Botones en modo oscuro */
+.dark-mode .btn-primary {
+  background-color: #61dafb;
+  border-color: #61dafb;
+  color: #000;
+}
+
+.dark-mode .btn-primary:hover {
+  background-color: #4ec0e9;
+  border-color: #4ec0e9;
+  transform: translateY(-3px);
+}
+
+.dark-mode .btn-outline-primary {
+  color: #61dafb;
+  border-color: #61dafb;
+}
+
+.dark-mode .btn-outline-primary:hover {
+  background-color: #61dafb;
+  color: #000;
+  border-color: #4ec0e9;
+}
+
+/* Tarjetas en modo oscuro */
+.dark-mode .card {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+}
+
+.dark-mode .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de las tarjetas en modo oscuro */
+.dark-mode .card-title {
+  color: #61dafb;
+}
+
+/* Texto de las tarjetas en modo oscuro */
+.dark-mode .card-text {
+  color: #dddddd;
+}
+
+/* Footer en modo oscuro */
+.dark-mode footer {
+  background-color: #0f0f0f;
+  color: #cccccc;
+}
+/* Botón de cambio de tema */
+.theme-toggle-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  border: 1px blue solid;
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #0a58ca;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Estilos del botón en modo oscuro */
+.dark-mode .theme-toggle-btn {
+  background-color: #0f0f0f;
+  color: #61dafb; /* Azul claro para el texto */
+  border-color: #61dafb;
+}
+
+.dark-mode .theme-toggle-btn:hover {
+  background-color: #61dafb;
+  color: #0f0f0f; /* Texto oscuro cuando está en hover */
+  border-color: #4ec0e9;
+}
