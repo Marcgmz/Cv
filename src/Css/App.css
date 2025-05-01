@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
 }
 
-/* Centro principal del contenido */
+/* Centro principal del contenido 
 #root {
   max-width: 100%;
   margin: 0 auto;
@@ -19,4 +19,4 @@ body {
 main {
   flex: 1;
 }
-
+*/

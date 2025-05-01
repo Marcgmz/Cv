@@ -8,6 +8,22 @@ body {
   color: #212529;
 }
 
+
+/* Título principal */
+.home-content h1 {
+  font-size: 6rem !important; /* Aumentado el tamaño */
+  color: #343a40 !important; /* Título con color oscuro */
+  font-weight: bold !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* En modo oscuro también */
+.dark-mode .home-content h1 {
+  font-size: 6rem !important; /* Aumentado el tamaño en modo oscuro */
+  color: #e6e6e6 !important; /* Título con color claro */
+}
+
+
 /* Layout principal */
 .home-layout {
   display: flex;
@@ -254,4 +270,209 @@ footer {
   background-color: #61dafb;
   color: #0f0f0f; /* Texto oscuro cuando está en hover */
   border-color: #4ec0e9;
+}
+
+
+/* Estilo base de letras con animacion */
+.letter-zoom span {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.letter-zoom span:hover {
+  transform: scale(1.3);
+  color: #0d6efd;
+}
+
+/* Ajuste para modo oscuro */
+.dark-mode .letter-zoom span:hover {
+  color: #61dafb; /* Azul claro igual que el tema oscuro */
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 5vw;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Permite que se acomoden en columna en pantallas pequeñas */
+}
+
+.custom-card {
+  background-color: var(--card-bg, #f8f9fa);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%; /* Se adapta y mantiene proporciones */
+  min-width: 280px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.custom-card .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.custom-card .card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Estilos para modo oscuro */
+.dark-mode .custom-card {
+  background-color: #222;
+  color: #f1f1f1;
+}
+
+/* Grupo de botones en línea, centrado y estilizado */
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+/* Botones estilo moderno */
+.button-group a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  border: 2px solid #0d6efd;
+  cursor: pointer;
+}
+
+/* Botón contorno azul */
+.btn-outline-primary {
+  background-color: transparent;
+  color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* Botón principal central */
+.btn-primary.central-button {
+  background-color: #0d6efd;
+  color: white;
+  border: 2px solid #0d6efd;
+}
+
+.btn-primary.central-button:hover {
+  background-color: #0a58ca;
+  border-color: #0a58ca;
+  transform: translateY(-3px);
+}
+
+/* Oscuro */
+.dark-mode .btn-outline-primary {
+  color: #61dafb;
+  border-color: #61dafb;
+}
+
+.dark-mode .btn-outline-primary:hover {
+  background-color: #61dafb;
+  color: #000;
+  border-color: #4ec0e9;
+}
+
+.dark-mode .btn-primary.central-button {
+  background-color: #61dafb;
+  color: black;
+  border-color: #61dafb;
+}
+
+.dark-mode .btn-primary.central-button:hover {
+  background-color: #4ec0e9;
+  border-color: #4ec0e9;
+  color: black;
+}
+
+/* Botón de tema con margen alineado con tarjetas */
+.theme-toggle-btn {
+  position: fixed;
+  top: 1rem;
+  left: 5vw; /* Alineado con tarjetas */
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  border: 2px solid #0d6efd;
+  background-color: white;
+  color: #0d6efd;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #0a58ca;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Modo oscuro para el botón de tema */
+.dark-mode .theme-toggle-btn {
+  background-color: #0f0f0f;
+  color: #61dafb;
+  border-color: #61dafb;
+}
+
+.dark-mode .theme-toggle-btn:hover {
+  background-color: #61dafb;
+  color: #0f0f0f;
+  border-color: #4ec0e9;
+}
+
+
+.cv-image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 5vw;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.cv-image-row img {
+  flex: 1 1 30%;
+  min-width: 280px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-image-row img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Modo oscuro para imágenes */
+.dark-mode .cv-image-row img {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .cv-image-row img:hover {
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.2);
 }
