@@ -6,19 +6,19 @@ function Templates() {
       id: 1,
       title: "Modern",
       description: "Una plantilla moderna y minimalista para CV",
-      image: "https://picsum.photos/id/1015/200/300"
+      image: "/cv.jpg"  // Imágen en public/cv.jpg
     },
     {
       id: 2,
       title: "Creative",
       description: "Una plantilla creativa y colorida para CV",
-      image: "https://picsum.photos/id/1016/200/300"
+      image: "/Cv1.jpg"  // Imágen en public/Cv1.jpg
     },
     {
       id: 3,
       title: "Classic",
       description: "Una plantilla clásica y profesional para CV",
-      image: "https://picsum.photos/id/1018/200/300"
+      image: "/Cv2.jpg"  // Imágen en public/Cv2.jpg
     }
   ];
 

@@ -18,7 +18,7 @@ function Home() {
   return (
     <div className={`home-layout ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <button onClick={toggleTheme} className="theme-toggle-btn">
-        {darkMode ? '☀️ Modo Claro' : '🌙 Modo Oscuro'}
+        {darkMode ? '☀️' : '🌙'}
       </button>
 
       <main className="home-main">

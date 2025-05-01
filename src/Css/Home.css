@@ -8,22 +8,6 @@ body {
   color: #212529;
 }
 
-
-/* Título principal */
-.home-content h1 {
-  font-size: 6rem !important; /* Aumentado el tamaño */
-  color: #343a40 !important; /* Título con color oscuro */
-  font-weight: bold !important;
-  margin-bottom: 1.5rem !important;
-}
-
-/* En modo oscuro también */
-.dark-mode .home-content h1 {
-  font-size: 6rem !important; /* Aumentado el tamaño en modo oscuro */
-  color: #e6e6e6 !important; /* Título con color claro */
-}
-
-
 /* Layout principal */
 .home-layout {
   display: flex;
@@ -48,8 +32,8 @@ body {
 
 /* Título principal */
 .home-content h1 {
-  font-size: 3.5rem;
-  color: #343a40; /* Título con color oscuro */
+  font-size: 6rem;
+  color: #343a40;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
@@ -57,20 +41,21 @@ body {
 /* Subtítulo */
 .home-content p.lead {
   font-size: 1.2rem;
-  color: #495057; /* Texto más suave */
+  color: #495057;
   margin-bottom: 2rem;
 }
 
 /* Botones */
 .home-content .btn-primary {
-  background-color: #0d6efd; /* Azul brillante para resaltar */
+  background-color: #0d6efd;
   border-color: #0d6efd;
   font-weight: 600;
-  padding: 0.8rem 2rem;
+  margin: 1rem;
+  padding: 0.8rem 2.5rem;
   font-size: 1.1rem;
-  border-radius: 50px; /* Bordes redondeados */
+  border-radius: 50px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  text-transform: uppercase; /* Mayúsculas para mayor impacto */
+  text-transform: uppercase;
 }
 
 .home-content .btn-primary:hover {
@@ -125,6 +110,7 @@ body {
 .card-text {
   color: #495057;
   font-size: 1rem;
+  text-align: center;
 }
 
 /* Espaciado general entre tarjetas */
@@ -236,21 +222,22 @@ footer {
   background-color: #0f0f0f;
   color: #cccccc;
 }
+
 /* Botón de cambio de tema */
 .theme-toggle-btn {
   position: fixed;
   top: 1rem;
-  left: 1rem;
+  left: 5vw; /* Alineado con tarjetas */
   z-index: 1000;
   padding: 0.5rem 1rem;
-  border: 1px blue solid;
+  border: 2px solid #0d6efd;
   background-color: white;
-  color: blue;
+  color: #0d6efd;
   font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .theme-toggle-btn:hover {
@@ -262,18 +249,17 @@ footer {
 /* Estilos del botón en modo oscuro */
 .dark-mode .theme-toggle-btn {
   background-color: #0f0f0f;
-  color: #61dafb; /* Azul claro para el texto */
+  color: #61dafb;
   border-color: #61dafb;
 }
 
 .dark-mode .theme-toggle-btn:hover {
   background-color: #61dafb;
-  color: #0f0f0f; /* Texto oscuro cuando está en hover */
+  color: #0f0f0f;
   border-color: #4ec0e9;
 }
 
-
-/* Estilo base de letras con animacion */
+/* Estilo base de letras con animación */
 .letter-zoom span {
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -286,9 +272,8 @@ footer {
 
 /* Ajuste para modo oscuro */
 .dark-mode .letter-zoom span:hover {
-  color: #61dafb; /* Azul claro igual que el tema oscuro */
+  color: #61dafb;
 }
-
 
 .card-container {
   display: flex;
@@ -297,7 +282,7 @@ footer {
   padding: 2rem 5vw;
   width: 100%;
   box-sizing: border-box;
-  flex-wrap: wrap; /* Permite que se acomoden en columna en pantallas pequeñas */
+  flex-wrap: wrap;
 }
 
 .custom-card {
@@ -305,7 +290,7 @@ footer {
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  flex: 1 1 30%; /* Se adapta y mantiene proporciones */
+  flex: 1 1 30%;
   min-width: 280px;
   box-sizing: border-box;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -322,7 +307,6 @@ footer {
   font-weight: 600;
   text-align: center;
 }
-
 
 .custom-card .card-text {
   font-size: 1rem;
@@ -407,43 +391,7 @@ footer {
   color: black;
 }
 
-/* Botón de tema con margen alineado con tarjetas */
-.theme-toggle-btn {
-  position: fixed;
-  top: 1rem;
-  left: 5vw; /* Alineado con tarjetas */
-  z-index: 1000;
-  padding: 0.5rem 1rem;
-  border: 2px solid #0d6efd;
-  background-color: white;
-  color: #0d6efd;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
-
-.theme-toggle-btn:hover {
-  background-color: #0a58ca;
-  color: white;
-  transform: translateY(-2px);
-}
-
-/* Modo oscuro para el botón de tema */
-.dark-mode .theme-toggle-btn {
-  background-color: #0f0f0f;
-  color: #61dafb;
-  border-color: #61dafb;
-}
-
-.dark-mode .theme-toggle-btn:hover {
-  background-color: #61dafb;
-  color: #0f0f0f;
-  border-color: #4ec0e9;
-}
-
-
+/* Estilo para imágenes en CV */
 .cv-image-row {
   display: flex;
   justify-content: space-between;
@@ -451,8 +399,10 @@ footer {
   padding: 2rem 5vw;
   box-sizing: border-box;
   flex-wrap: wrap;
+  margin-top: 3rem;  /* Asegura un espacio similar al de las cards */
 }
 
+/* Estilo de las imágenes en la fila */
 .cv-image-row img {
   flex: 1 1 30%;
   min-width: 280px;
@@ -461,8 +411,10 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem; /* Agregar margen en la parte inferior para igualar el espaciado con las cards */
 }
 
+/* Efecto hover para imágenes */
 .cv-image-row img:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
