@@ -1,12 +1,33 @@
-# React + Vite
+# 📄 Mi CVMaker en Línea
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido/a a mi proyecto personal de currículum en formato web. Este repositorio contiene una aplicación sencilla que presenta una novedosa forma de crear tu curriculum de forma sencilla, intuitiva, con diferentes temas y estilos y un pequeño portal con ofertas donde puedes mirar también las estadísticas de los trabajos más buscados actualmente
 
-Currently, two official plugins are available:
+## 👤 Sobre mí
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Soy **Marc Gomez**, un desarrollador **junior de aplicaciones web** con interés en el desarrollo frontend y backend. Me estoy formando en tecnologías modernas y actualmente estoy ampliando mi experiencia a través de proyectos personales como este.
 
-## Expanding the ESLint configuration
+### 🚀 Tecnologías con las que trabajo:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML, CSS, JavaScript
+- React / Vue (según aplique)
+- Node.js / PHP / Python (según aplique)
+- MySQL, SQLite
+- Git & GitHub
+
+### 🎯 Objetivo del proyecto
+
+- Crear un CV donde mostrar el perfil profesional de forma atractiva y accesible.
+- Tener un creador de CV interactivo y con un pequeño portal de ofertas de trabajo.
+
+## 🧪 Cómo ver el CV
+
+Puedes ver la versión online accediendo a:
+
+🔗 [https://cv-puce-six-93.vercel.app/](https://cv-puce-six-93.vercel.app/) *(reemplaza con tu URL real)*
+
+O clona el repositorio y ábrelo localmente:
+
+```bash
+git clone https://github.com/miusuario/mi-cv.git
+cd mi-cv
+# 
