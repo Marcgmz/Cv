@@ -23,7 +23,7 @@ Soy **Marc Gomez**, un desarrollador **junior de aplicaciones web** con interés
 
 Puedes ver la versión online accediendo a:
 
-🔗 [https://cv-puce-six-93.vercel.app/](https://cv-puce-six-93.vercel.app/) *(reemplaza con tu URL real)*
+🔗 [https://cv-puce-six-93.vercel.app/](https://cv-puce-six-93.vercel.app/) 
 
 O clona el repositorio y ábrelo localmente:
 
